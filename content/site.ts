@@ -101,10 +101,10 @@ export const siteConfig: SiteConfig = {
   siteName: "Sunan Zhao",
   tagline: "PhD Student · MAE · SUSTech",
   bio: "My research interests focus on AI for fluid mechanics, including physics-informed (PI) approaches and neural operator models.",
-  siteUrl: "https://sunan-zhao.github.io",
+  siteUrl: "https://personal-page-sunan-zhao.vercel.app",
   avatar: "/avatar.jpg",
   lastUpdated: "2026-10-07",
-  sourceUrl: "https://github.com/Sunan-zhao",
+  sourceUrl: "https://github.com/Sunan-zhao/personal_page",
   location: "[Shenzhen, China]",
   links: {
     email: "mailto:12631229@mail.sustech.edu.cn",
