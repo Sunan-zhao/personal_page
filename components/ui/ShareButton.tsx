@@ -47,7 +47,11 @@ export function ShareButton({
   }, []);
 
   const handleClick = useCallback(async () => {
-    const shareUrl = url || window.location.href;
+    const rawUrl = url || window.location.href;
+    // never share an insecure link
+    const shareUrl = /^http:\/\/(localhost|127\.0\.0\.1)/i.test(rawUrl)
+      ? rawUrl
+      : rawUrl.replace(/^http:\/\//i, "https://");
     const shareTitle = title || document.title;
     const shareData: ShareData = { title: shareTitle, url: shareUrl };
     if (text) shareData.text = text;
