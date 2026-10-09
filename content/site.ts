@@ -110,6 +110,7 @@ export const siteConfig: SiteConfig = {
     email: "mailto:12631229@mail.sustech.edu.cn",
     cv: "/CV_Sunan_Zhao.pdf",
     github: "https://github.com/Sunan-zhao",
+    scholar: "https://scholar.google.com/citations?user=oP9u9ZYAAAAJ&hl=zh-CN",
   },
   featuredProjects: [],
   selectedPublications: [
