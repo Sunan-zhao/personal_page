@@ -1,6 +1,5 @@
 import React from "react";
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/content/site";
@@ -25,11 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={spaceGrotesk.variable}>
       <body className="min-h-screen bg-surface text-slate-100 antialiased">
-        <Script
-          id="force-https"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{ __html: forceHttps }}
-        />
+        {/* Runs inline, before anything renders: hop from http:// to https:// */}
+        <script dangerouslySetInnerHTML={{ __html: forceHttps }} />
         {children}
       </body>
     </html>
