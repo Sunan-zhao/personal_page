@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { SiteConfig } from "@/content/site";
 import { IconLink } from "@/components/ui/IconLink";
+import { ShareButton } from "@/components/ui/ShareButton";
 import { DblpIcon, FileIcon, GithubIcon, MailIcon, ScholarIcon, LinkedinIcon } from "@/components/icons";
 
 const labelStyles = "text-xs uppercase tracking-[0.2em] text-amber-300";
@@ -56,6 +57,7 @@ export function Hero({
                   <DblpIcon className="h-4 w-4" />
                 </IconLink>
               ) : null}
+              <ShareButton title={name} text={`${name} — ${tagline}`} />
             </div>
           </div>
           <p
